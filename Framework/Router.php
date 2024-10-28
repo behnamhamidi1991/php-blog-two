@@ -3,8 +3,16 @@
 class Router {
     protected $routes = [];
 
+    /**
+     * Add a new route
+     * 
+     * @param string $method
+     * @param string $uri
+     * @param string $controller
+     * @return void
+     */
     public function registerRoute($method, $uri, $controller) {
-        $this->routes = [
+        $this->routes[] = [
             'method' => $method,
             'uri' => $uri,
             'controller' => $controller
@@ -71,7 +79,7 @@ class Router {
         }
 
         http_response_code(404);
-        loadView('error/404');
+        loadView('errors/404');
         exit;
     }
 }

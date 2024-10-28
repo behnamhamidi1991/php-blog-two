@@ -176,8 +176,9 @@ body {
 }
 
 /* BLOG */
-.blog-section {
+.blog-section-single {
   margin-top: 100px;
+  padding: 50px 15%;
 }
 
 .blog-section h2 {
@@ -284,4 +285,42 @@ body {
 .errors h4 {
   font-size: 30px;
   color: var(--secondary-color);
+}
+
+/* CREATE FORM */
+
+.create-post-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 10px;
+}
+
+.create-post-form input {
+  padding: 10px;
+  font-family: "regular-text";
+}
+
+.create-post-form textarea {
+  resize: none;
+  height: 200px;
+  padding: 10px;
+  font-family: "regular-text";
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.create-post-form button {
+  padding: 7px;
+  outline: none;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-family: "regular-text";
+  cursor: pointer;
 }
