@@ -5,8 +5,7 @@
    
 
       <!-- Main Content -->
-      <section id="projects" class="blog-section">
-        <h2>آخرین مطالب وبلاگ</h2>
+      <section id="blog" class="blog-section">
         <div class="blog-container">
           
           <?php foreach($posts as $post) : ?>
@@ -17,7 +16,7 @@
               <p>
                 <?= $post->content ?>
               </p>
-              <a href="#" class="readmore-blog">بیشتر بخوانید</a>
+              <a href="/post?id=<?= $post->id ?>" class="readmore-blog">بیشتر بخوانید</a>
             </div>
           </div>
           <?php endforeach; ?>

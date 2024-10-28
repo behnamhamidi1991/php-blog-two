@@ -181,10 +181,8 @@ body {
   padding: 50px 15%;
 }
 
-.blog-section h2 {
-  font-family: "black-text";
-  margin-bottom: 20px;
-  font-size: 19px;
+.blog-section {
+  margin: 55px 0;
 }
 
 .blog-container {
@@ -323,4 +321,8 @@ body {
   color: var(--text-color);
   font-family: "regular-text";
   cursor: pointer;
+}
+
+.single-post {
+  padding: 100px 15%;
 }
